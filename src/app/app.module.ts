@@ -7,13 +7,15 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StudentsComponent } from './students/students.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,

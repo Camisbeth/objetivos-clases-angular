@@ -1,0 +1,17 @@
+<ul>
+  <li *ngFor="let student of students">
+    <p>
+      Nombre:
+      {{ student.name }}
+    </p>
+
+    <p>Fecha de nacimiento: {{ student.birthday | date : "mediumDate" }}</p>
+
+    <div [ngClass]="student.courseStatus ? 'disapproved' : 'approved'">
+      <p *ngIf="student.courseStatus; else elseBlock">
+        <span>Desaprobado</span>
+      </p>
+      <ng-template #elseBlock>Aprobado</ng-template>
+    </div>
+  </li>
+</ul>
